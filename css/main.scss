@@ -20,6 +20,7 @@ nav {
   background: #EB6137;
   height: 100vh;
   padding: 2em;
+  
 }
 
 
@@ -300,6 +301,7 @@ section{
 
 .menu-btn{
     display: block;
+    
 }
 
 .mobile-menu-exit {
@@ -310,6 +312,40 @@ section{
 }
 
 @media only screen and (min-width: 800px){
+
+    nav{
+        display: unset;
+        background: unset;
+        height: auto;
+        position: unset;
+        width: 80%;
+        padding: 0;
+
+        ul{
+            width: 40%;
+            display: flex;
+            place-content: space-between;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            float: right;
+        }
+        
+        a{
+            
+            text-decoration: none;
+        }
+
+    }
+
+    
+    
+    // img{width: 100%;}
+
+    .mobile-menu, .mobile-menu-exit{
+        display: none;
+    }
+
     .featured, .portfolio{
         text-align: left;
     }

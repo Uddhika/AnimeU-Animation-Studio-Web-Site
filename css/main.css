@@ -257,6 +257,31 @@ section {
 }
 
 @media only screen and (min-width: 800px) {
+  nav {
+    display: unset;
+    background: unset;
+    height: auto;
+    position: unset;
+    width: 80%;
+    padding: 0;
+  }
+  nav ul {
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+  }
+  nav a {
+    text-decoration: none;
+  }
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
   .featured, .portfolio {
     text-align: left;
   }
